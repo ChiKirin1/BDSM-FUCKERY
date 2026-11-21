@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HL ",
+    " L ",
+    " LA"
+  ],
+  "key": {
+    "H": "dungeon_devices:hand_shackles",
+    "A": "dungeon_devices:ankle_shackles",
+    "L": "#minecraft:logs"
+  },
+  "result": {
+    "id": "dungeon_devices:bondage_pole"
+  }
+}

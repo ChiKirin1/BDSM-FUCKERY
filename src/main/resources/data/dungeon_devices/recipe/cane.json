@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  S",
+    " S ",
+    "H  "
+  ],
+  "key": {
+    "H": "dungeon_devices:handle",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "dungeon_devices:cane"
+  }
+}

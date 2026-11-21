@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " IC",
+    " HI",
+    "H  "
+  ],
+  "key": {
+    "H": "dungeon_devices:handle",
+    "I": "minecraft:iron_ingot",
+    "C": "#minecraft:coals"
+  },
+  "result": {
+    "id": "dungeon_devices:branding_iron"
+  }
+}

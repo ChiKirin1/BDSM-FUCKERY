@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_dungeon_bricks_slabs",
+  "pattern": [
+    "xxx"
+  ],
+  "key": {
+    "x": "dungeon_devices:polished_dungeon_bricks"
+  },
+  "result": {
+    "id": "dungeon_devices:polished_dungeon_bricks_slab",
+    "count": 6
+  }
+}

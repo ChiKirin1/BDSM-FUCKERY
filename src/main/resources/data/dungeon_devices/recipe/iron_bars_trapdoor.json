@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "minecraft:iron_bars"
+  },
+  "result": {
+    "id": "dungeon_devices:iron_bars_trapdoor",
+    "count": 2
+  }
+}

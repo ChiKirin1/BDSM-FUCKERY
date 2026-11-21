@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "N N",
+    "WWW"
+  ],
+  "key": {
+    "W": "#minecraft:planks",
+    "N": "minecraft:iron_nugget"
+  },
+  "result": {
+    "id": "dungeon_devices:dungeon_plank",
+    "count": 8
+  }
+}

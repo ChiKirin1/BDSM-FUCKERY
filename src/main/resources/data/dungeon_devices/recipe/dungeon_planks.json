@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "key": {
+    "B": "dungeon_devices:dungeon_plank"
+  },
+  "result": {
+    "id": "dungeon_devices:dungeon_planks",
+    "count": 2
+  }
+}

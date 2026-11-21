@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dungeon_planks_fences",
+  "pattern": [
+    "x#x",
+    "x#x"
+  ],
+  "key": {
+    "x": "dungeon_devices:dungeon_planks",
+    "#": "minecraft:stick"
+  },
+  "result": {
+    "id": "dungeon_devices:dungeon_planks_fence",
+    "count": 3
+  }
+}

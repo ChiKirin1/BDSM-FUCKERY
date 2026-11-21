@@ -1,0 +1,32 @@
+{
+  "parent": "dungeon_devices:ankle_shackles",
+  "display": {
+    "icon": {
+      "id": "dungeon_devices:chastity_bra"
+    },
+    "title": {
+      "translate": "advancements.chastity_bra.title"
+    },
+    "description": {
+      "translate": "advancements.chastity_bra.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chastity_bra": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeon_devices:chastity_bra"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

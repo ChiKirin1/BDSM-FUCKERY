@@ -1,0 +1,32 @@
+{
+  "parent": "dungeon_devices:iron_whip",
+  "display": {
+    "icon": {
+      "id": "dungeon_devices:diamond_whip"
+    },
+    "title": {
+      "translate": "advancements.diamond_whip.title"
+    },
+    "description": {
+      "translate": "advancements.diamond_whip.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "diamond_whip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeon_devices:diamond_whip"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

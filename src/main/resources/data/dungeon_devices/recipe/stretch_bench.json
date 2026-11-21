@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " HC",
+    "PPP",
+    "S S"
+  ],
+  "key": {
+    "H": "dungeon_devices:hand_shackles",
+    "C": "minecraft:iron_chain",
+    "P": "#minecraft:planks",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "dungeon_devices:stretch_bench"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "side": "dungeon_devices:block/dungeon_bricks",
+    "bottom": "dungeon_devices:block/dungeon_bricks",
+    "top": "dungeon_devices:block/dungeon_bricks"
+  }
+}

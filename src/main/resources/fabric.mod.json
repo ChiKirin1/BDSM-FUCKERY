@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "dungeon_devices",
+  "version": "${version}",
+  "name": "Dungeon Devices",
+  "description": "Dungeon furniture, restraints and implements. Fabric port of the Forge mod by Faa and Zaky.",
+  "authors": [
+    "Faa",
+    "Zaky",
+    "Fabric port: Claude (Anthropic), ported with the original authors' permission"
+  ],
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "com.zakyfaa.dungeondevices.DungeonDevices" ],
+    "client": [ "com.zakyfaa.dungeondevices.client.DungeonDevicesClient" ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*",
+    "player_animation_library": "*"
+  }
+}

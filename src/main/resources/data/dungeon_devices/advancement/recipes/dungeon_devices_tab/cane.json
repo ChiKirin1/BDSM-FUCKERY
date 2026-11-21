@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dungeon_devices:cane"
+    ]
+  },
+  "criteria": {
+    "has_handle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeon_devices:handle"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dungeon_devices:cane"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_handle",
+      "has_the_recipe"
+    ]
+  ]
+}

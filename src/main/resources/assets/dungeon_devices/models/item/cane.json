@@ -1,0 +1,9 @@
+{
+  "parent": "dungeon_devices:custom/cane",
+  "textures": {
+    "0": "block/oak_log",
+    "1": "block/stripped_oak_log",
+    "particle": "dungeon_devices:item/cane"
+  },
+  "gui_light": "front"
+}

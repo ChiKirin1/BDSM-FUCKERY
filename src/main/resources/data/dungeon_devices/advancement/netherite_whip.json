@@ -1,0 +1,32 @@
+{
+  "parent": "dungeon_devices:diamond_whip",
+  "display": {
+    "icon": {
+      "id": "dungeon_devices:netherite_whip"
+    },
+    "title": {
+      "translate": "advancements.netherite_whip.title"
+    },
+    "description": {
+      "translate": "advancements.netherite_whip.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "netherite_whip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeon_devices:netherite_whip"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

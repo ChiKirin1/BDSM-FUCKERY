@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "dungeon_devices:dungeon_bricks",
+  "result": {
+    "id": "dungeon_devices:cracked_dungeon_bricks"
+  },
+  "experience": 0.1,
+  "cooking_time": 200
+}

@@ -1,0 +1,37 @@
+{
+  "whip_hit": {
+    "subtitles": "sounds.dungeon_devices.whip_hit",
+    "category": "players",
+    "sounds": [
+      "dungeon_devices:whip_hit"
+    ]
+  },
+  "paddle_slap": {
+    "subtitles": "sounds.dungeon_devices.paddle_slap",
+    "category": "players",
+    "sounds": [
+      "dungeon_devices:paddle_slap"
+    ]
+  },
+  "branding_iron_hit": {
+    "subtitles": "sounds.dungeon_devices.branding_iron_hit",
+    "category": "players",
+    "sounds": [
+      "dungeon_devices:branding_iron_hit"
+    ]
+  },
+  "vibrator_sound": {
+    "subtitles": "sounds.dungeon_devices.vibrator",
+    "category": "players",
+    "sounds": [
+      "dungeon_devices:vibrator_sound"
+    ]
+  },
+  "lock": {
+    "subtitles": "sounds.dungeon_devices.lock",
+    "category": "players",
+    "sounds": [
+      "dungeon_devices:lock"
+    ]
+  }
+}

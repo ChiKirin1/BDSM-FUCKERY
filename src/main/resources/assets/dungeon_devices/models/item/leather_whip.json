@@ -1,0 +1,9 @@
+{
+  "parent": "dungeon_devices:custom/whip",
+  "textures": {
+    "0": "dungeon_devices:block/leather_stick",
+    "1": "dungeon_devices:block/leather_whip",
+    "particle": "dungeon_devices:item/leather_whip"
+  },
+  "gui_light": "front"
+}

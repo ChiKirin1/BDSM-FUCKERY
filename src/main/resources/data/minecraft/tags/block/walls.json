@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dungeon_devices:dungeon_bricks_wall",
+    "dungeon_devices:polished_dungeon_bricks_wall",
+    "dungeon_devices:mossy_dungeon_bricks_wall",
+    "dungeon_devices:dungeon_bricks_tiles_wall"
+  ]
+}

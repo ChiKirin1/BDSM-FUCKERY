@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dungeon_bricks_chiseled",
+  "pattern": [
+    "x",
+    "x"
+  ],
+  "key": {
+    "x": "dungeon_devices:dungeon_bricks_slab"
+  },
+  "result": {
+    "id": "dungeon_devices:chiseled_dungeon_bricks"
+  }
+}

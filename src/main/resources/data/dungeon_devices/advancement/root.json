@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "dungeon_devices:wooden_paddle"
+    },
+    "title": {
+      "translate": "advancement.root.title"
+    },
+    "description": {
+      "translate": "advancement.root.description"
+    },
+    "background": "minecraft:textures/block/red_wool.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

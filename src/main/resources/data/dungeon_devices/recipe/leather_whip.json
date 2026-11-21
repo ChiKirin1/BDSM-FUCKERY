@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "S C",
+    "H  "
+  ],
+  "key": {
+    "S": "minecraft:string",
+    "H": "dungeon_devices:handle",
+    "C": "minecraft:leather"
+  },
+  "result": {
+    "id": "dungeon_devices:leather_whip"
+  }
+}

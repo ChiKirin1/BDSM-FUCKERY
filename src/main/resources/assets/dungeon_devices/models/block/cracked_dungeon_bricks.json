@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "dungeon_devices:block/cracked_dungeon_bricks"
+  }
+}

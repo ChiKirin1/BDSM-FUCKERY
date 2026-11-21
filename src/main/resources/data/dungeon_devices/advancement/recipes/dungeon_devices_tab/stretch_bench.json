@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dungeon_devices:stretch_bench"
+    ]
+  },
+  "criteria": {
+    "has_hand_shackles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeon_devices:hand_shackles"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dungeon_devices:stretch_bench"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_hand_shackles",
+      "has_the_recipe"
+    ]
+  ]
+}

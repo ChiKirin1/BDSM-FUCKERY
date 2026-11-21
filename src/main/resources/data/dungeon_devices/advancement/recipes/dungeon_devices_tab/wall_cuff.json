@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dungeon_devices:wall_cuff"
+    ]
+  },
+  "criteria": {
+    "has_hand_shackles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeon_devices:hand_shackles"
+            ]
+          }
+        ]
+      }
+    },
+    "has_logs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:logs"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dungeon_devices:wall_cuff"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_hand_shackles",
+      "has_logs",
+      "has_the_recipe"
+    ]
+  ]
+}

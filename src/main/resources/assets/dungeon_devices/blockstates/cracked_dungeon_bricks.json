@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dungeon_devices:block/cracked_dungeon_bricks"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "dungeon_devices:custom/branding_iron",
+  "textures": {
+    "0": "dungeon_devices:block/branding_iron",
+    "particle": "dungeon_devices:block/branding_iron"
+  },
+  "gui_light": "front"
+}

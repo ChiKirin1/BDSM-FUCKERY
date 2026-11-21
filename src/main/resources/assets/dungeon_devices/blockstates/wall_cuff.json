@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dungeon_devices:block/wall_cuff"
+    },
+    "facing=east": {
+      "model": "dungeon_devices:block/wall_cuff",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "dungeon_devices:block/wall_cuff",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dungeon_devices:block/wall_cuff",
+      "y": 270
+    }
+  }
+}

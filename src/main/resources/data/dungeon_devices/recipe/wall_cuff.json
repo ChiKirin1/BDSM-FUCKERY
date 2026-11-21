@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "LHL",
+    "SSS"
+  ],
+  "key": {
+    "L": "#minecraft:logs",
+    "H": "dungeon_devices:hand_shackles",
+    "S": "#minecraft:wooden_slabs"
+  },
+  "result": {
+    "id": "dungeon_devices:wall_cuff"
+  }
+}

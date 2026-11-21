@@ -1,0 +1,9 @@
+{
+  "parent": "dungeon_devices:custom/cursed_whip",
+  "textures": {
+    "0": "dungeon_devices:block/cursed_stick",
+    "1": "dungeon_devices:block/cursed_whip",
+    "particle": "dungeon_devices:item/cursed_whip"
+  },
+  "gui_light": "front"
+}

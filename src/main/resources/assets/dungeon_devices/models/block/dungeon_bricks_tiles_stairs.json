@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "side": "dungeon_devices:block/dungeon_bricks_tiles",
+    "bottom": "dungeon_devices:block/dungeon_bricks_tiles",
+    "top": "dungeon_devices:block/dungeon_bricks_tiles"
+  }
+}

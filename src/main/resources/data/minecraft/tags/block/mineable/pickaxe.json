@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "dungeon_devices:cage",
+    "dungeon_devices:iron_bars_door",
+    "dungeon_devices:iron_bars_trapdoor",
+    "dungeon_devices:dungeon_bricks",
+    "dungeon_devices:dungeon_bricks_pillar",
+    "dungeon_devices:dungeon_bricks_stairs",
+    "dungeon_devices:dungeon_bricks_slab",
+    "dungeon_devices:dungeon_bricks_wall",
+    "dungeon_devices:cracked_dungeon_bricks",
+    "dungeon_devices:chiseled_dungeon_bricks",
+    "dungeon_devices:polished_dungeon_bricks",
+    "dungeon_devices:polished_dungeon_bricks_stairs",
+    "dungeon_devices:polished_dungeon_bricks_slab",
+    "dungeon_devices:polished_dungeon_bricks_wall",
+    "dungeon_devices:mossy_dungeon_bricks",
+    "dungeon_devices:mossy_dungeon_bricks_stairs",
+    "dungeon_devices:mossy_dungeon_bricks_slab",
+    "dungeon_devices:mossy_dungeon_bricks_wall",
+    "dungeon_devices:dungeon_bricks_tiles",
+    "dungeon_devices:dungeon_bricks_tiles_stairs",
+    "dungeon_devices:dungeon_bricks_tiles_slab",
+    "dungeon_devices:dungeon_bricks_tiles_wall"
+  ]
+}

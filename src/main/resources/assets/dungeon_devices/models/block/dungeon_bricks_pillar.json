@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "dungeon_devices:block/dungeon_bricks_pillar",
+    "end": "dungeon_devices:block/dungeon_bricks_pillar_top"
+  }
+}

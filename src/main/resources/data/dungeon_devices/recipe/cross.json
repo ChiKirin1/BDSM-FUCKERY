@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TPT",
+    "PLP",
+    "TPT"
+  ],
+  "key": {
+    "P": "#minecraft:planks",
+    "L": "#minecraft:logs",
+    "T": "minecraft:tripwire_hook"
+  },
+  "result": {
+    "id": "dungeon_devices:cross"
+  }
+}

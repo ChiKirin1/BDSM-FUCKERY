@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BN"
+  ],
+  "key": {
+    "N": "minecraft:nether_brick",
+    "B": "minecraft:brick"
+  },
+  "result": {
+    "id": "dungeon_devices:dungeon_brick",
+    "count": 4
+  }
+}

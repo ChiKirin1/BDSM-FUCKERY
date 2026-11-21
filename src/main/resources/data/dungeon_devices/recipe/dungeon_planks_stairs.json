@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dungeon_planks_stairs",
+  "pattern": [
+    "x  ",
+    "xx ",
+    "xxx"
+  ],
+  "key": {
+    "x": "dungeon_devices:dungeon_planks"
+  },
+  "result": {
+    "id": "dungeon_devices:dungeon_planks_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "bottom": "dungeon_devices:block/iron_bars_door_bottom",
+    "top": "dungeon_devices:block/iron_bars_door_top"
+  }
+}

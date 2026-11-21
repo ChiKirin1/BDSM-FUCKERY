@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C C",
+    "ITI"
+  ],
+  "key": {
+    "C": "minecraft:iron_chain",
+    "I": "minecraft:iron_ingot",
+    "T": "minecraft:tripwire_hook"
+  },
+  "result": {
+    "id": "dungeon_devices:chastity_bra"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polished_dungeon_bricks_stairs",
+  "pattern": [
+    "x  ",
+    "xx ",
+    "xxx"
+  ],
+  "key": {
+    "x": "dungeon_devices:polished_dungeon_bricks"
+  },
+  "result": {
+    "id": "dungeon_devices:polished_dungeon_bricks_stairs",
+    "count": 4
+  }
+}

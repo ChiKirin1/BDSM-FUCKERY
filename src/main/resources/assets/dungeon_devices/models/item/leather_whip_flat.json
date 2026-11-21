@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dungeon_devices:item/leather_whip"
+  },
+  "gui_light": "front"
+}

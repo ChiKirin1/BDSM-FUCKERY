@@ -1,0 +1,32 @@
+{
+  "parent": "dungeon_devices:root",
+  "display": {
+    "icon": {
+      "id": "dungeon_devices:hand_shackles"
+    },
+    "title": {
+      "translate": "advancements.hand_shackles.title"
+    },
+    "description": {
+      "translate": "advancements.hand_shackles.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hand_shackles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeon_devices:hand_shackles"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

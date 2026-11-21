@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "dungeon_devices:block/dungeon_bricks_tiles_slab_top"
+    },
+    "type=bottom": {
+      "model": "dungeon_devices:block/dungeon_bricks_tiles_slab"
+    },
+    "type=double": {
+      "model": "dungeon_devices:block/dungeon_bricks_tiles"
+    }
+  }
+}

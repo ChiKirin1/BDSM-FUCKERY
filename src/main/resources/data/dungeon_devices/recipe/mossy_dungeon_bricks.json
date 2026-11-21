@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "V",
+    "B"
+  ],
+  "key": {
+    "B": "dungeon_devices:dungeon_bricks",
+    "V": "minecraft:vine"
+  },
+  "result": {
+    "id": "dungeon_devices:mossy_dungeon_bricks"
+  }
+}

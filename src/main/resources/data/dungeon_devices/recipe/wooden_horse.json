@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " N ",
+    "SLS",
+    "F F"
+  ],
+  "key": {
+    "S": "#minecraft:wooden_stairs",
+    "L": "#minecraft:logs",
+    "N": "#minecraft:wooden_slabs",
+    "F": "#minecraft:wooden_fences"
+  },
+  "result": {
+    "id": "dungeon_devices:wooden_horse"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dungeon_bricks_tiles_slabs",
+  "pattern": [
+    "xxx"
+  ],
+  "key": {
+    "x": "dungeon_devices:dungeon_bricks_tiles"
+  },
+  "result": {
+    "id": "dungeon_devices:dungeon_bricks_tiles_slab",
+    "count": 6
+  }
+}

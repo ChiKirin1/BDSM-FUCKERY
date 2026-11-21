@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "dungeon_devices:block/dungeon_bricks_tiles"
+  }
+}

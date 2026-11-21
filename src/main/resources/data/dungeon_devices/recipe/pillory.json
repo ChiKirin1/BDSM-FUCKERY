@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    " L ",
+    "SSS"
+  ],
+  "key": {
+    "P": "#minecraft:planks",
+    "L": "#minecraft:logs",
+    "S": "#minecraft:wooden_slabs"
+  },
+  "result": {
+    "id": "dungeon_devices:pillory"
+  }
+}

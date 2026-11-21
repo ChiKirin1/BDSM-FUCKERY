@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BWB"
+  ],
+  "key": {
+    "W": "dungeon_devices:wooden_horse",
+    "B": "minecraft:iron_block"
+  },
+  "result": {
+    "id": "dungeon_devices:weighted_wooden_horse"
+  }
+}

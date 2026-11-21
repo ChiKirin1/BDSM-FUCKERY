@@ -1,0 +1,32 @@
+{
+  "parent": "dungeon_devices:root",
+  "display": {
+    "icon": {
+      "id": "dungeon_devices:leather_whip"
+    },
+    "title": {
+      "translate": "advancements.leather_whip.title"
+    },
+    "description": {
+      "translate": "advancements.leather_whip.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "first_domination": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeon_devices:leather_whip"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

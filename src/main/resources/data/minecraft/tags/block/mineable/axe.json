@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "dungeon_devices:dungeon_planks",
+    "dungeon_devices:dungeon_planks_stairs",
+    "dungeon_devices:dungeon_planks_slab",
+    "dungeon_devices:dungeon_planks_fence",
+    "dungeon_devices:dungeon_planks_fence_gate",
+    "dungeon_devices:bondage_bench",
+    "dungeon_devices:stretch_bench",
+    "dungeon_devices:wooden_horse",
+    "dungeon_devices:weighted_wooden_horse",
+    "dungeon_devices:cross",
+    "dungeon_devices:cuff_bed",
+    "dungeon_devices:bondage_pole",
+    "dungeon_devices:pillory",
+    "dungeon_devices:dungeon_door",
+    "dungeon_devices:dungeon_trapdoor"
+  ]
+}

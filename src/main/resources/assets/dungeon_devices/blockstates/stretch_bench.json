@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=north,part=foot": {
+      "model": "dungeon_devices:block/stretch_bench_foot"
+    },
+    "facing=south,part=foot": {
+      "model": "dungeon_devices:block/stretch_bench_foot",
+      "y": 180
+    },
+    "facing=west,part=foot": {
+      "model": "dungeon_devices:block/stretch_bench_foot",
+      "y": 270
+    },
+    "facing=east,part=foot": {
+      "model": "dungeon_devices:block/stretch_bench_foot",
+      "y": 90
+    },
+    "facing=north,part=center": {
+      "model": "dungeon_devices:block/stretch_bench_center"
+    },
+    "facing=south,part=center": {
+      "model": "dungeon_devices:block/stretch_bench_center",
+      "y": 180
+    },
+    "facing=west,part=center": {
+      "model": "dungeon_devices:block/stretch_bench_center",
+      "y": 270
+    },
+    "facing=east,part=center": {
+      "model": "dungeon_devices:block/stretch_bench_center",
+      "y": 90
+    },
+    "facing=north,part=head": {
+      "model": "dungeon_devices:block/stretch_bench_head"
+    },
+    "facing=south,part=head": {
+      "model": "dungeon_devices:block/stretch_bench_head",
+      "y": 180
+    },
+    "facing=west,part=head": {
+      "model": "dungeon_devices:block/stretch_bench_head",
+      "y": 270
+    },
+    "facing=east,part=head": {
+      "model": "dungeon_devices:block/stretch_bench_head",
+      "y": 90
+    }
+  }
+}

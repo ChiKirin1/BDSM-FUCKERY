@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  L",
+    " LD",
+    "H  "
+  ],
+  "key": {
+    "H": "dungeon_devices:handle",
+    "L": "minecraft:leather",
+    "D": "minecraft:black_dye"
+  },
+  "result": {
+    "id": "dungeon_devices:riding_crop"
+  }
+}

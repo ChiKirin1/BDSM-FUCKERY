@@ -1,0 +1,9 @@
+{
+  "values": [
+    "dungeon_devices:leather_whip",
+    "dungeon_devices:iron_whip",
+    "dungeon_devices:diamond_whip",
+    "dungeon_devices:netherite_whip",
+    "dungeon_devices:cursed_whip"
+  ]
+}

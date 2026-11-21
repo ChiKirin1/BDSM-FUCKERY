@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "SCS"
+  ],
+  "key": {
+    "W": "minecraft:red_wool",
+    "C": "minecraft:black_concrete",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "dungeon_devices:bondage_bench"
+  }
+}

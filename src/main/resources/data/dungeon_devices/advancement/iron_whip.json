@@ -1,0 +1,32 @@
+{
+  "parent": "dungeon_devices:leather_whip",
+  "display": {
+    "icon": {
+      "id": "dungeon_devices:iron_whip"
+    },
+    "title": {
+      "translate": "advancements.iron_whip.title"
+    },
+    "description": {
+      "translate": "advancements.iron_whip.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iron_whip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dungeon_devices:iron_whip"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

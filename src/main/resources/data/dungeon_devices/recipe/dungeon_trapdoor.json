@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": "dungeon_devices:dungeon_planks"
+  },
+  "result": {
+    "id": "dungeon_devices:dungeon_trapdoor",
+    "count": 2
+  }
+}

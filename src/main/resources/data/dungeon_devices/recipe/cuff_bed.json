@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H A",
+    "WWW",
+    "PPP"
+  ],
+  "key": {
+    "W": "minecraft:red_wool",
+    "H": "dungeon_devices:hand_shackles",
+    "A": "dungeon_devices:ankle_shackles",
+    "P": "#minecraft:planks"
+  },
+  "result": {
+    "id": "dungeon_devices:cuff_bed"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "dungeon_devices:custom/whip",
+  "textures": {
+    "0": "dungeon_devices:block/netherite_stick",
+    "1": "dungeon_devices:block/netherite_whip",
+    "particle": "dungeon_devices:item/netherite_whip"
+  },
+  "gui_light": "front"
+}

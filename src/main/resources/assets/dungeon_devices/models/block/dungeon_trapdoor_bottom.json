@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_orientable_trapdoor_bottom",
+  "textures": {
+    "texture": "dungeon_devices:block/dungeon_trapdoor"
+  }
+}
