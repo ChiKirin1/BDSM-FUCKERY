@@ -20,8 +20,11 @@ public final class ModBlockEntities {
 			ModBlocks.CAGE,
 			ModBlocks.CROSS,
 			ModBlocks.CUFF_BED,
-			ModBlocks.BONDAGE_POLE
-			// The Forge original did not list WEIGHTED_WOODEN_HORSE or WALL_CUFF here. Kept identical.
+			ModBlocks.BONDAGE_POLE,
+			// The Forge 1.18 original forgot these two, which Forge tolerated. 1.21 validates it
+			// (crash: "Invalid block entity ... got weighted_wooden_horse"), so they are listed now.
+			ModBlocks.WEIGHTED_WOODEN_HORSE,
+			ModBlocks.WALL_CUFF
 		).build());
 
 	public static void init() {}

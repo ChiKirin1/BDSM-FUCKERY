@@ -14,6 +14,7 @@ public class DungeonDevicesClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		SeatAnimationClient.register();
+		VibratorClient.register();
 		EntityRendererRegistry.register(ModEntities.WOODEN_HORSE_SEAT, EmptyEntityRenderer::new);
 		EntityRendererRegistry.register(ModEntities.WEIGHTED_WOODEN_HORSE_SEAT, EmptyEntityRenderer::new);
 		EntityRendererRegistry.register(ModEntities.STRETCH_BENCH_SEAT, EmptyEntityRenderer::new);

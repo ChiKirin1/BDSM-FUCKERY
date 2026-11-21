@@ -16,6 +16,8 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageTypes;
+import net.minecraft.entity.passive.CatEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.RegistryKey;
@@ -71,6 +73,19 @@ public final class ModEvents {
 		if (source.getAttacker() instanceof PlayerEntity killer && SoulPact.isEnabled(killer)
 			&& !entity.getType().getSpawnGroup().equals(SpawnGroup.MISC)) {
 			killer.setAbsorptionAmount(10.0F);
+		}
+		// Easter egg: killing the cat "Zakyotsu" with the netherite whip drops a random cursed restraint (was aj).
+		if (entity instanceof CatEntity cat && source.getAttacker() instanceof PlayerEntity attacker
+			&& attacker.getMainHandStack().isOf(ModItems.NETHERITE_WHIP)
+			&& "Zakyotsu".equals(cat.getName().getString())
+			&& cat.getEntityWorld() instanceof ServerWorld serverWorld) {
+			ItemStack drop = switch (serverWorld.getRandom().nextInt(4)) {
+				case 0 -> new ItemStack(ModItems.CURSED_CHASTITY_BELT);
+				case 1 -> new ItemStack(ModItems.CURSED_CHASTITY_BRA);
+				case 2 -> new ItemStack(ModItems.CURSED_HAND_SHACKLES);
+				default -> new ItemStack(ModItems.CURSED_ANKLE_SHACKLES);
+			};
+			cat.dropStack(serverWorld, drop);
 		}
 		// Dying frees the player from any furniture.
 		if (entity instanceof PlayerEntity dead) {

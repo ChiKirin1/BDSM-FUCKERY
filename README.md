@@ -17,11 +17,27 @@ Port: Claude (Anthropic). Class names were de-obfuscated (`z` -> `FurnitureBlock
 - Resources migrated to 1.21 formats: recipes, loot tables, advancements, tags, item model definitions
   (`minecraft:chain` -> `iron_chain`; netherite whip smithing now needs the vanilla template)
 
-## Not done yet (phase 2+)
-- Whips, paddle, cane, crop, branding iron (+ `forge:separate_transforms` item models -> `select` item definitions)
+## Phase 2a (added)
+- All 6 whips + paddle, cane, riding crop, branding iron (stats copied from the 1.18 tiers), sounds, creative tab icon
+- 4 enchantments (Comforting Hit, Entanglement, Motivation, Punishment) as datapack JSON
+- Cursed whip "Soul Pact", no-knockback + thorns-proof implements, release from furniture on dismount/logout/death
+- Whip/implement item models converted from forge:separate-perspective to display_context item definitions
+
+## Phase 2b-1 (added): restraint poses
+- Player Animation Library dependency (successor of PlayerAnimator, which stops at 1.21.7)
+- Server->client pose packet, re-sent on login / start-tracking; client plays/stops poses
+- 9 pose files moved to assets/dungeon_devices/player_animations (legacy PlayerAnimator format is read natively)
+
+## Phase 2b-2a (added): restraints, gameplay
+- 8 restraint items (bra/belt/hand+ankle shackles, normal + cursed) with the original durability/armor/slots
+- Ankle shackles slow the wearer (Extra Tight = Slowness III); hand shackles -1.5 reach (Extra Tight -0.2 more)
+- Extra Tight enchantment (datapack), cursed belt vibrator sound (client->server->clients), "Zakyotsu" cat easter egg
+- NOT yet drawn on the player: GeckoLib renderer is phase 2b-2b
+
+## Not done yet (phase 2b-2b+)
 - Shackles / chastity items (GeckoLib 3 armor -> GeckoLib 5, new equipment asset format), effect-toggle capability -> Fabric attachment
-- Enchantments (5, now datapack-driven), mixins (MixinEntity, MixinFox), sounds events, config
-- Networking + client: Player Animation Library poses, seat renderer, vibration sound, Supplementaries compat
+- GeckoLib renderer for the restraints (models/animation/bend), mixins MixinEntity/MixinFox (MixinEntity, MixinFox), sounds events, config
+- Supplementaries compat, legacy id remap
 
 ## Behaviour notes
 - Original bug fixed: block entity never restored the seat entity id (checked the wrong NBT type).

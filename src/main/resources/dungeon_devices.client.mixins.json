@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.zakyfaa.dungeondevices.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "SeatPoseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

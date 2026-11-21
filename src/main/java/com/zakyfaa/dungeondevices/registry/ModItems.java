@@ -3,7 +3,9 @@ package com.zakyfaa.dungeondevices.registry;
 import com.zakyfaa.dungeondevices.DungeonDevices;
 import com.zakyfaa.dungeondevices.item.*;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.AttributeModifierSlot;
+import net.minecraft.component.type.EquippableComponent;
 import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -52,6 +54,16 @@ public final class ModItems {
 	public static final Item BRANDING_IRON = register("branding_iron",
 		key -> weapon(key, 0.0, -3.0, 0, 0, null), BrandingIronItem::new);
 
+	// ---------- restraints (wearable) ----------
+	public static final Item CHASTITY_BRA = restraint(RestraintType.CHASTITY_BRA);
+	public static final Item CURSED_CHASTITY_BRA = restraint(RestraintType.CURSED_CHASTITY_BRA);
+	public static final Item CHASTITY_BELT = restraint(RestraintType.CHASTITY_BELT);
+	public static final Item CURSED_CHASTITY_BELT = restraint(RestraintType.CURSED_CHASTITY_BELT);
+	public static final Item HAND_SHACKLES = restraint(RestraintType.HAND_SHACKLES);
+	public static final Item CURSED_HAND_SHACKLES = restraint(RestraintType.CURSED_HAND_SHACKLES);
+	public static final Item ANKLE_SHACKLES = restraint(RestraintType.ANKLE_SHACKLES);
+	public static final Item CURSED_ANKLE_SHACKLES = restraint(RestraintType.CURSED_ANKLE_SHACKLES);
+
 	// ---------- plain items ----------
 	public static final Item HANDLE = simple("handle");
 	public static final Item DUNGEON_PLANK = simple("dungeon_plank");
@@ -82,6 +94,14 @@ public final class ModItems {
 				entries.add(RIDING_CROP);
 				entries.add(CANE);
 				entries.add(BRANDING_IRON);
+				entries.add(CHASTITY_BRA);
+				entries.add(CURSED_CHASTITY_BRA);
+				entries.add(CHASTITY_BELT);
+				entries.add(CURSED_CHASTITY_BELT);
+				entries.add(HAND_SHACKLES);
+				entries.add(CURSED_HAND_SHACKLES);
+				entries.add(ANKLE_SHACKLES);
+				entries.add(CURSED_ANKLE_SHACKLES);
 				entries.add(HANDLE);
 				entries.add(DUNGEON_PLANK);
 				entries.add(DUNGEON_BRICK);
@@ -118,6 +138,43 @@ public final class ModItems {
 		if (enchantability > 0) settings.enchantable(enchantability);
 		if (repairItem != null) settings.repairable(repairItem);
 		return settings;
+	}
+
+	/**
+	 * Wearable restraint. The original was a GeckoLib armor item with a custom armor material:
+	 * durability 600/400, protection 3/6/8/3 per slot, enchantability 10, repaired with iron ingots.
+	 * Built by hand (no ArmorMaterial) so the per-slot numbers stay exactly as they were.
+	 * No equippable "asset" is set, so nothing is drawn until the GeckoLib renderer (phase 2b-2b).
+	 */
+	private static Item restraint(RestraintType type) {
+		return register(type.itemName(), key -> {
+			AttributeModifierSlot slot = switch (type.slot()) {
+				case HEAD -> AttributeModifierSlot.HEAD;
+				case CHEST -> AttributeModifierSlot.CHEST;
+				case LEGS -> AttributeModifierSlot.LEGS;
+				default -> AttributeModifierSlot.FEET;
+			};
+			AttributeModifiersComponent.Builder attributes = AttributeModifiersComponent.builder()
+				.add(EntityAttributes.ARMOR,
+					new EntityAttributeModifier(DungeonDevices.id("restraint_armor_" + type.slot().getName()),
+						type.protection(), EntityAttributeModifier.Operation.ADD_VALUE),
+					slot);
+			if (type.isHandShackles()) {
+				// was am.java: -1.5 reach while worn in the chest slot (Extra Tight adds -0.2, see enchantment json)
+				attributes.add(EntityAttributes.BLOCK_INTERACTION_RANGE,
+					new EntityAttributeModifier(DungeonDevices.id("reach_distance"), -1.5,
+						EntityAttributeModifier.Operation.ADD_VALUE),
+					slot);
+			}
+			return new Item.Settings().registryKey(key)
+				.maxDamage(type.durability())
+				.attributeModifiers(attributes.build())
+				.enchantable(10)
+				.repairable(Items.IRON_INGOT)
+				.component(DataComponentTypes.EQUIPPABLE, EquippableComponent.builder(type.slot())
+					.equipSound(Registries.SOUND_EVENT.getEntry(DungeonDevices.id("lock")).orElseThrow())
+					.build());
+		}, s -> new RestraintItem(s, type));
 	}
 
 	private static <T extends Item> T register(String name, Function<RegistryKey<Item>, Item.Settings> settings,

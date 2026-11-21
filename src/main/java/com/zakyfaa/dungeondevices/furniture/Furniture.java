@@ -41,7 +41,14 @@ public enum Furniture {
 	public String blockName() { return blockName; }
 	public String seatName() { return blockName + "_seat"; }
 	public double seatX(double blockX) { return offsetX + blockX; }
-	public double seatY(double blockY) { return offsetY + blockY; }
+	/**
+	 * 1.18 placed a rider 0.35 blocks below the seat; 1.21 uses the player's vehicle attachment point
+	 * (about 0.6 below). The original offsets were tuned for 1.18, so add the difference back.
+	 * Tune this one number if players still sit too high/low.
+	 */
+	public static final double RIDER_HEIGHT_CORRECTION = 0.25;
+
+	public double seatY(double blockY) { return offsetY + blockY + RIDER_HEIGHT_CORRECTION; }
 	public double seatZ(double blockZ) { return offsetZ + blockZ; }
 	public double generalOffset() { return generalOffset; }
 	public boolean oppositeDirection() { return oppositeDirection; }
